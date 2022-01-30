@@ -1,0 +1,21 @@
+.about {
+  progress {
+    height: 5px;
+    width: 100%;
+  }
+
+  .progress_info {
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    @include breakpoint-up(medium) {
+      margin-left: auto;
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.footer {
+  background: url('../img/footer-bg.webp') no-repeat center center;
+  height: 100vh;
+  background-size: cover;
+  color: $white;
+
+  p {
+    color: $white;
+  }
+
+  @include container;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  @include breakpoint-up(medium) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__section {
+    width: 100%;
+    &:nth-child(1),
+    &:nth-child(2) {
+      @include column(5, large);
+    }
+
+    &:nth-child(3) {
+      @include column(2, large);
+    }
+  }
+
+  a {
+    display: inline-block;
+    margin-right: 25px;
+  }
+
+  i {
+    color: $white;
+
+    &:hover {
+      color: $color_secondary;
+      transition: color 0.3s ease-in-out;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  &__input {
+    width: 70%;
+    padding: 10px;
+  }
+
+  &__btn {
+    width: 10%;
+    padding-top: 10px;
+    background: $color_secondary;
+    text-align: center;
+    cursor: pointer;
+  }
+}

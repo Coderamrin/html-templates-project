@@ -1,0 +1,21 @@
+//flexbox mixin
+@mixin flex(
+  $justifyContent: flex-start,
+  $alignItems: flex-start,
+  $direction: row
+) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-direction: $direction;
+}
+
+// helper mixin
+@mixin centerBoth($height: 100vh, $RemoveCenter: false) {
+  @if $RemoveCenter == false {
+    @include flex($justifyContent: center, $direction: column);
+    height: $height;
+  } @else {
+    height: auto;
+  }
+}

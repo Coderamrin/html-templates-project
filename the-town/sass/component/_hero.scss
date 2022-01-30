@@ -1,0 +1,102 @@
+.hero {
+  background: url('../img/the-town-bg-01.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: $color-primary;
+
+  .nav {
+    @include flex(space-between, center);
+    padding-top: toRem(30);
+
+    &__links {
+      position: absolute;
+      top: 80px;
+      left: -200%;
+      right: 0;
+      width: 92%;
+      height: toRem(180);
+      margin: auto;
+      padding: toRem(20);
+      background-color: $color-primary;
+      transition: 0.5s ease;
+      @include flex(space-between, flex-end, column);
+
+      @include breakpoint-up(medium) {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        background: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        color: $color-secondery;
+        text-align: right;
+        font-size: toRem(25);
+        text-transform: capitalize;
+
+        @include breakpoint-up(medium) {
+          padding-right: 40px;
+          color: $color-primary;
+        }
+
+        &:hover {
+          color: $color-tirtiary;
+        }
+      }
+
+      &.active {
+        left: 0;
+      }
+    }
+
+    .hamburger {
+      font-size: toRem(30);
+      cursor: pointer;
+    }
+
+    .logo {
+      font-size: toRem(25);
+      font-weight: bold;
+    }
+  }
+
+  &__info {
+    @include flex(center, center);
+    height: 70vh;
+    text-align: center;
+
+    h1 {
+      font-size: toRem(50);
+      font-weight: bold;
+      text-transform: capitalize;
+      margin-bottom: toRem(20);
+    }
+
+    p {
+      font-size: toRem(20);
+      line-height: 1.5;
+    }
+
+    .hero__btn {
+      padding: toRem(20) toRem(35);
+      background-color: $color-primary;
+      border-radius: 50%;
+      border: 0;
+      font-size: toRem(50);
+      color: sandybrown;
+      cursor: pointer;
+      position: relative;
+      top: 150px;
+
+      &:hover {
+        color: $color-primary;
+        background-color: $color-tirtiary;
+        transition: 0.4s ease;
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+//convert px to rem
+@function toRem($value, $context: 16) {
+  $remValue: ($value / $context) + rem;
+  @return $remValue;
+}

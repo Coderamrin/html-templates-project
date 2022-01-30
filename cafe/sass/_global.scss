@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $fm_primary;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+p {
+  color: $color_tertiary;
+  font-size: $fs_xsmall;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+::selection {
+  background-color: $color_secondary;
+}
+
+.hide-for-mobile {
+  @include breakpoint-down(small) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}

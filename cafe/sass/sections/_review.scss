@@ -1,0 +1,49 @@
+.review {
+  background-color: $color_secondary;
+  color: $white;
+
+  p {
+    color: $white;
+  }
+
+  .brand__logo {
+    width: auto;
+  }
+
+  &__container {
+    @include container();
+    justify-content: center;
+  }
+
+  &__item {
+    @include column(8, medium);
+    @include column(6, large);
+    padding-right: pxToRem(20);
+  }
+
+  &__starsAndname {
+    @include flex(flex-start, center);
+
+    .filled {
+      color: orange;
+    }
+  }
+}
+
+.statistics {
+  @include container();
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statistic {
+  width: 60%;
+  margin: 0 auto;
+  @include column(6, medium);
+  @include column(3, large);
+
+  &__number {
+    font-size: $fs_xlarge;
+    font-weight: 100;
+  }
+}

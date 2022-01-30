@@ -1,0 +1,65 @@
+.navbar {
+  @include flex(space-between, center);
+  @include container($isGrid: false);
+  padding-top: pxToRem(20);
+  background: transparent;
+  position: fixed;
+
+  @include breakpoint-up(medium) {
+    padding-top: pxToRem(40);
+    padding-bottom: 10px;
+  }
+
+  .hamburger {
+    font-size: pxToRem(25);
+    color: $white;
+    cursor: pointer;
+  }
+
+  &__links {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    background-color: $color_primary;
+    width: 50%;
+    transition: left 0.5s ease;
+
+    @include flex(flex-start, flex-start, column);
+
+    @include breakpoint-down(small) {
+      height: 100vh;
+    }
+
+    @include breakpoint-up(medium) {
+      position: static;
+      background: transparent;
+      padding: 0;
+      width: auto;
+      @include flex(flex-end, center, row);
+    }
+
+    a {
+      font-size: pxToRem(12);
+      font-weight: 600;
+      color: $white;
+      position: relative;
+      padding-bottom: 2rem;
+
+      @include breakpoint-up(medium) {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    &.active {
+      left: 0;
+    }
+  }
+
+  &__scrolled {
+    background-color: #222222e3;
+    transition: background-color 0.5s ease;
+  }
+}

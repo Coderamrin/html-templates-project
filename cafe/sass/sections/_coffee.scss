@@ -1,0 +1,54 @@
+.coffee {
+  background: url('../img/coffee-bg.webp') no-repeat center center;
+  background-size: cover;
+
+  &__top {
+    text-align: center;
+  }
+
+  &__grid {
+    @include container();
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.card {
+  @include column(6, medium);
+  @include column(3.5, large);
+
+  background: $white;
+  padding: pxToRem(30);
+  border-radius: pxToRem(20);
+  margin-bottom: pxToRem(20);
+  box-shadow: 3px 24px 43px -28px rgba(182, 136, 52, 0.52);
+
+  @include breakpoint-up(medium) {
+    margin: 20px;
+  }
+
+  &__top {
+    @include flex($justifyContent: space-between);
+  }
+}
+
+.coffee-overview {
+  &__grid {
+    @include container();
+    align-items: center;
+    justify-content: center;
+
+    a {
+      @include column(5, medium);
+      @include column(3.5, large);
+      height: auto;
+      display: block;
+      margin: 10px;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.hero {
+  background: url('../img/hero-bg.webp') no-repeat center center;
+  background-size: cover;
+  background-position: left;
+  height: 150vh;
+
+  @include breakpoint-up(medium) {
+    background-position: center;
+    height: 100vh;
+  }
+
+  &__content {
+    @include container($isGrid: false);
+    @include column(10, medium);
+    @include column(7, large);
+
+    @include centerBoth(80vh);
+    margin: 0;
+
+    @include breakpoint-up(medium) {
+      @include centerBoth($RemoveCenter: true);
+      padding-top: pxToRem(100);
+    }
+
+    p {
+      font-weight: 600;
+      color: $white;
+    }
+  }
+}

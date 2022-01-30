@@ -1,0 +1,21 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 4, 8, 0.6)),
+		url('./img-1.jpg') no-repeat;
+	background-position: top left;
+	background-size: cover;
+	height: 92vh;
+}
+
+.hero-text {
+	height: 90vh;
+}
+
+@media screen and (max-width: 500px) {
+    .hero {
+        background-position: center;
+    }
+}

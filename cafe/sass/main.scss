@@ -1,0 +1,22 @@
+@import 'reset';
+@import 'functions';
+@import 'variables';
+@import 'grid';
+@import 'mixin';
+@import 'typography';
+@import 'global';
+
+//components
+@import 'components/buttons';
+@import 'components/navbar';
+
+// sections
+@import 'sections/hero';
+@import 'sections/about';
+@import 'sections/coffee';
+@import 'sections/review';
+@import 'sections/blog';
+@import 'sections/footer';
+
+// it stays at the bottom of the file cause the grid mixin override its styles
+@import 'spacing';

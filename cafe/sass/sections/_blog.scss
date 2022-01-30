@@ -1,0 +1,12 @@
+.blogs {
+  &__items {
+    @include container();
+    justify-content: space-between;
+    // align-items: center;
+
+    .blog {
+      padding-top: pxToRem(20);
+      @include column(5.5, large);
+    }
+  }
+}

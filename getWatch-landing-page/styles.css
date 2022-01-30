@@ -1,0 +1,68 @@
+body,
+a {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* changed nav menu colors */
+.nav-item .nav-link {
+  color: black;
+}
+
+.nav-item .activeLink {
+  color: red;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus,
+.nav-item .nav-link:active {
+  color: red;
+}
+
+/* hamburger menu styles */
+.navbar-toggler {
+  color: red;
+}
+
+.navbar-toggler .fas {
+  font-size: 40px;
+}
+
+/* hero */
+.hero-btn:hover {
+  border: 2px solid #fff;
+  background-color: #dc3545 !important;
+  color: #fff !important;
+}
+
+.about {
+  background-color: rgb(240, 240, 240);
+}
+
+.about li {
+  list-style: square;
+  font-weight: bold;
+}
+
+.feature-icon {
+  font-size: 50px;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 20px 15px;
+  color: red;
+}
+
+.feature-icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.products,
+.FAQ {
+  background-color: rgb(240, 240, 240);
+}
+
+.product {
+  background: rgb(250, 222, 185);
+  border: 4px solid rgb(105, 101, 101);
+  font-weight: bold;
+}

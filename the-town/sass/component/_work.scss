@@ -1,0 +1,27 @@
+.work {
+  padding: toRem(100) 0;
+
+  &__info {
+    text-align: center;
+    padding-bottom: toRem(50);
+    max-width: 60%;
+    margin: auto;
+
+    h2 {
+      font-size: toRem(40);
+      color: $color-tirtiary;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__item {
+    font-size: toRem(35);
+    color: $color-primary;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 1.2;
+    span {
+      font-weight: bold;
+    }
+  }
+}

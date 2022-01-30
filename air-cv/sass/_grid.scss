@@ -1,0 +1,63 @@
+// @use 'sass:math';
+
+$grid-columns: 12;
+
+// base layout classes
+.container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-left: auto;
+
+  @include breakpoint-up(medium) {
+    padding: 0 100px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+}
+
+// col classes
+@include breakpoint-down(small) {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: ($i * 100% / $grid-columns);
+    }
+  }
+}
+
+@include breakpoint-up(medium) {
+  @for $i from 1 through $grid-columns {
+    .col-md-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: ($i * 100% / $grid-columns);
+    }
+  }
+}
+
+@include breakpoint-up(large) {
+  @for $i from 1 through $grid-columns {
+    .col-lg-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: ($i * 100% / $grid-columns);
+    }
+  }
+}
+
+@include breakpoint-up(xlarge) {
+  @for $i from 1 through $grid-columns {
+    .col-xlg-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: ($i * 100% / $grid-columns);
+    }
+  }
+}

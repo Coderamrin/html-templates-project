@@ -1,0 +1,56 @@
+.contact {
+  background: url('../../dist/img/the-town-bg-02.jpg') center no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: toRem(100);
+
+  p {
+    color: #fff;
+    text-align: center;
+  }
+
+  &__top {
+    color: $color-primary;
+
+    h2 {
+      font-size: toRem(40);
+      border-bottom: 2px solid $color-primary;
+      padding: 20px 0;
+    }
+
+    p {
+      padding: 20px 0;
+      line-height: 2;
+    }
+  }
+
+  &__item {
+    height: 200px;
+    color: $color-primary;
+
+    i {
+      font-size: 50px;
+    }
+
+    p {
+      padding-left: 20px;
+    }
+
+    input {
+      background: transparent;
+      border: 1px solid #fff;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 12px 30px;
+      background: #fff;
+      border: 0;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
+}
