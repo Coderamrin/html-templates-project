@@ -1,0 +1,12 @@
+.services {
+  &__grid {
+    @include container;
+  }
+
+  &__item {
+    text-align: center;
+    padding: 3% 2%;
+
+    @include column(4, large);
+  }
+}

@@ -1,0 +1,54 @@
+//title size
+.title {
+  font-weight: 400;
+  font-family: $fm_primary;
+
+  &-1 {
+    font-size: $fs_xlarge;
+    @extend .title;
+
+    @include breakpoint-down(small) {
+      font-size: $fs_large;
+    }
+  }
+
+  &-2 {
+    font-size: $fs_large;
+    @extend .title;
+  }
+
+  &-3 {
+    font-size: $fs_medium;
+    @extend .title;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--black {
+    color: $black;
+  }
+}
+
+.text {
+  &-1 {
+    font-size: $fs_small;
+  }
+
+  &-2 {
+    // font-size: $fs_small2;
+  }
+
+  &-3 {
+    font-size: $fs_medium;
+  }
+
+  &-4 {
+    font-size: $fs_large;
+  }
+}
+
+.subtitle {
+  color: $color_primary;
+}

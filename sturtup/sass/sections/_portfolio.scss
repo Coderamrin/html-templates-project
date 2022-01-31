@@ -1,0 +1,45 @@
+.portfolio {
+  &__top {
+    @include breakpoint-up(large) {
+      padding: 0 120px;
+    }
+  }
+
+  &__grid {
+    @include container;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 100%;
+
+    @include column(3.8, large);
+    margin-bottom: 30px;
+    height: pxToRem(350);
+
+    &:nth-child(1) {
+      @include column(7.9, large);
+    }
+  }
+}
+
+.how-we-work {
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    @include column(5, large);
+    padding-left: 20px;
+
+    @include breakpoint-up(medium) {
+      padding: 100px 0 100px 100px;
+    }
+  }
+
+  &__banner {
+    background: url('../../img/how-we-work.webp') center;
+    @include column(6, medium);
+    height: 105vh;
+    border-radius: 15px;
+  }
+}

@@ -1,0 +1,14 @@
+.team {
+  &__grid {
+    @include container;
+    justify-content: center;
+
+    @include breakpoint-up(medium) {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    @include column(3, large);
+  }
+}

@@ -1,0 +1,21 @@
+.hero {
+  @include container;
+  @include centerBoth(80vh);
+  background-color: $color_primary;
+  color: $white;
+
+  &__info {
+    @include column(6, large);
+  }
+
+  &__banner {
+    @include column(6, large);
+    background: url('../../Imgs/hero-bg.png');
+    background-position: bottom right;
+    background-size: cover;
+  }
+
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+.about {
+  background: $black;
+  display: flex;
+
+  h2,
+  p {
+    color: $white;
+    font-weight: 500;
+  }
+
+  &__top {
+    @include column(5, large);
+    padding-left: 20px;
+
+    @include breakpoint-up(medium) {
+      padding: 100px 0 100px 100px;
+    }
+  }
+
+  &__banner {
+    background: url('../../img/about-bg.webp') center;
+    @include column(6, medium);
+    height: 105vh;
+  }
+}

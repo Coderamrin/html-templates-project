@@ -1,0 +1,14 @@
+.testimonials {
+  @include container;
+  text-align: center;
+  justify-content: space-between;
+
+  .testimonial {
+    @include column(5, large);
+    padding-bottom: 4rem;
+
+    img {
+      width: 150px;
+    }
+  }
+}

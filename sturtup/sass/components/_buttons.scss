@@ -1,0 +1,40 @@
+//button, btn styles
+button,
+.btn {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: $black;
+  background-color: $white;
+  border: none;
+  border-radius: 5rem;
+  font-size: $fs_xsmall;
+  font-family: $fm_primary;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  // make button rounded
+  padding: 0.8rem 2rem;
+}
+
+.btn {
+  &--primary {
+    font-weight: bold;
+    color: $white;
+    background-color: $color_primary;
+    border: 1px solid $color_primary;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: transparent;
+      color: $color_primary;
+    }
+  }
+
+  &--blue {
+    background-color: blue;
+  }
+
+  &--secondery {
+    background-color: $color_secondary;
+  }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sass Library</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="navbar__logo">DevHub</a>
+
+        <div class="navbar__hamburger hide-for-desktop">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="navbar__links">
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#coffee">coffee</a>
+          <a href="#review">review</a>
+          <a href="#blog">blog</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero__info">
+        <h1 class="title-1 pb-1">Meet DevHub</h1>
+        <p class="pb-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          obcaecati nulla odio quo unde provident placeat!
+        </p>
+
+        <button>Get in touch</button>
+      </div>
+
+      <div class="hero__banner hide-for-mobile">
+        <img src="./Imgs/hero-img.png" alt="illustrations" />
+      </div>
+    </section>
+
+    <section class="services section py-5">
+      <div class="services__info section__info">
+        <h2 class="title-2 pb-1">what we offer</h2>
+        <p class="pb-1 pb-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          obcaecati nulla odio quo unde provident placeat!
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <div class="services__item">
+          <img src="./Imgs/offer-1.png" alt="security image" />
+          <h3 class="title-3 py-1">security</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            soluta
+          </p>
+        </div>
+        <div class="services__item">
+          <img src="./Imgs/offer-2.png" alt="security image" />
+          <h3 class="title-3 py-1">security</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            soluta
+          </p>
+        </div>
+        <div class="services__item">
+          <img src="./Imgs/offer-3.png" alt="security image" />
+          <h3 class="title-3 py-1">security</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            soluta
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section py-5" id="about">
+      <div class="about__info section__info">
+        <h2 class="title-2 pb-1">why us</h2>
+        <p class="pb-1 pb-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          obcaecati nulla odio quo unde provident placeat!
+        </p>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__banner">
+          <img src="./Imgs/why-img.png" alt="why us banner" />
+        </div>
+
+        <div class="about__items">
+          <div class="about__item">
+            <img src="./Imgs/why-1.png" alt="" />
+            <div class="item__info">
+              <h3 class="title-3 pb-1">24/7 Online Support</h3>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="about__item">
+            <img src="./Imgs/why-2.png" alt="" />
+            <div class="item__info">
+              <h3 class="title-3 pb-1">Lorem ipsum dolor sit</h3>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="about__item">
+            <img src="./Imgs/why-3.png" alt="" />
+            <div class="item__info">
+              <h3 class="title-3 pb-1">Easy and Fast work</h3>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team py-4">
+      <div class="team__info">
+        <h2 class="title-2">The Best Developers in the world.</h2>
+        <p class="py-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+          accusantium
+        </p>
+        <button>Meet the team</button>
+      </div>
+    </section>
+
+    <section class="client section py-5" id="client">
+      <div class="client__info section__info">
+        <h2 class="title-2 pb-1">Trusted By 1000+ Clients</h2>
+        <p class="pb-1 pb-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          obcaecati nulla odio quo unde provident placeat!
+        </p>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonial">
+          <img src="./Imgs/client-1.png" alt="client" />
+          <p class="py-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
+            numquam similique perferendis sint obcaecati accusantium, itaque
+            quas quaerat possimus,
+          </p>
+
+          <h3 class="title-3">Mrs. Joyce Monahan</h3>
+        </div>
+        <div class="testimonial">
+          <img src="./Imgs/client-2.png" alt="client" />
+          <p class="py-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
+            numquam similique perferendis sint obcaecati accusantium, itaque
+            quas quaerat possimus,
+          </p>
+
+          <h3 class="title-3">Mrs. Joyce Monahan</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact__info py-4">
+        <h2 class="title-2">work with us</h2>
+        <p class="py-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellen
+        </p>
+
+        <button class="btn--secondery">get in touch</button>
+      </div>
+
+      <div class="contact__banner hide-for-mobile"></div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="footer__links py-1">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#coffee">coffee</a>
+        <a href="#review">review</a>
+        <a href="#blog">blog</a>
+      </div>
+
+      <div class="footer__text py-1">
+        DevHub Copyright @ 2022 All Rights Reserved
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

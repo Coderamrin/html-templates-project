@@ -1,0 +1,13 @@
+.testimonial {
+  background: linear-gradient(rgba(50, 48, 49, 0.9), rgba(50, 48, 49, 0.8)),
+    url('../../img/testimonial-bg.webp') center no-repeat;
+  background-size: cover;
+  color: $white;
+  text-align: center;
+  @include centerBoth;
+
+  img {
+    width: 50px;
+    border-radius: 50%;
+  }
+}

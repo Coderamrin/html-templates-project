@@ -1,0 +1,15 @@
+.team {
+  &__info {
+    background: url('../../Imgs/team-bg.png') center no-repeat;
+    width: 80%;
+    margin: auto;
+    padding: pxToRem(80) pxToRem(20);
+    text-align: center;
+    color: $white;
+    border-radius: 20px;
+  }
+
+  p {
+    color: $white;
+  }
+}

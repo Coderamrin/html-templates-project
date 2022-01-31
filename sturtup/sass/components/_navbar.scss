@@ -1,0 +1,84 @@
+.navbar {
+  @include flex(space-between, center);
+  padding: 20px 30px;
+  position: fixed;
+  width: 100%;
+  background: $black;
+
+  @include breakpoint-up(medium) {
+    background: transparent;
+    padding-left: pxToRem(100);
+    padding-right: pxToRem(100);
+  }
+
+  &__hamburger {
+    font-size: pxToRem(30);
+    cursor: pointer;
+    color: $white;
+  }
+
+  a {
+    color: $color_tertiary;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  .navbar__btn {
+    border-bottom: 5px solid $color_primary;
+    color: $white;
+    padding-bottom: pxToRem(10);
+  }
+
+  &__links {
+    position: absolute;
+    top: pxToRem(78);
+    left: -200%;
+    right: 0;
+    margin: auto;
+    padding: 2rem;
+    width: 100%;
+    background: none;
+    transition: left 0.5s ease-in-out;
+
+    @include flex(space-between, flex-start, column);
+
+    @include breakpoint-up(medium) {
+      position: static;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      width: auto;
+      @include flex(flex-end, center, row);
+    }
+
+    @include breakpoint-down(small) {
+      background: #4c4c4c;
+    }
+
+    a {
+      font-size: $fs_xsmall;
+      position: relative;
+      transition: 0.3s ease;
+      padding-bottom: 1.5rem;
+      color: $white;
+
+      @include breakpoint-up(medium) {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+
+        &:hover {
+          color: #615cfd;
+        }
+      }
+    }
+
+    &.active {
+      left: 0;
+    }
+  }
+
+  &__scrolled {
+    background: $black;
+    opacity: 0.8;
+  }
+}

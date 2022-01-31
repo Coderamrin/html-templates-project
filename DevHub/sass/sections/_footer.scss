@@ -1,0 +1,45 @@
+.contact {
+  @include container;
+  background-color: $color_secondary;
+  color: $white;
+  height: 80vh;
+
+  &__info {
+    @include column(5, large);
+    @include centerBoth(80vh);
+  }
+
+  &__banner {
+    @include column(7, large);
+    background: url('../../Imgs/hero-bg.png') center no-repeat;
+    background-size: cover;
+  }
+
+  p {
+    color: $white;
+  }
+}
+
+.footer {
+  @include container;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @include breakpoint-up(medium) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &__links {
+    @include column(6, large);
+    a {
+      color: $color_primary;
+      text-transform: capitalize;
+    }
+  }
+
+  &__text {
+    @include column(6, large);
+  }
+}

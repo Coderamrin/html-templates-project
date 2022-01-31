@@ -1,0 +1,42 @@
+.contact__form {
+  width: 80%;
+  margin: auto;
+
+  input,
+  textarea,
+  button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    border-radius: 15px;
+  }
+
+  @include breakpoint-up(medium) {
+    width: 80%;
+    margin: auto;
+    @include container;
+    justify-content: space-between;
+
+    input {
+      &:nth-child(1),
+      &:nth-child(2) {
+        @include column(5.5, medium);
+      }
+
+      &:nth-child(3) {
+        @include column(12, medium);
+      }
+    }
+
+    textarea {
+      @include column(12, medium);
+      border-radius: 15px;
+    }
+
+    button {
+      @include column(12, medium);
+    }
+  }
+}

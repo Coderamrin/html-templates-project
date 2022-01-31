@@ -1,0 +1,50 @@
+//title size
+.title {
+  font-weight: 500;
+  text-transform: capitalize;
+
+  &-1 {
+    font-size: $fs_xlarge;
+    @extend .title;
+
+    @include breakpoint-down(medium) {
+      font-size: $fs_large;
+    }
+  }
+
+  &-2 {
+    font-size: $fs_medium;
+    @extend .title;
+  }
+
+  &-3 {
+    font-size: $fs_small;
+    @extend .title;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--black {
+    color: $black;
+  }
+}
+
+.text {
+  &-1 {
+    font-size: $fs_small;
+  }
+
+  &-2 {
+    // font-size: $fs_small2;
+  }
+
+  &-3 {
+    font-size: $fs_medium;
+  }
+
+  &-4 {
+    font-size: $fs_large;
+  }
+}

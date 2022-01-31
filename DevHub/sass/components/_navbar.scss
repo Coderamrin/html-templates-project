@@ -1,0 +1,73 @@
+.navbar {
+  @include flex(space-between, center);
+  background: $color_primary;
+  padding: 20px 30px;
+
+  @include breakpoint-up(medium) {
+    padding-left: pxToRem(100);
+    padding-right: pxToRem(100);
+  }
+
+  &__hamburger {
+    font-size: pxToRem(25);
+    cursor: pointer;
+    color: $white;
+  }
+
+  &__logo {
+    font-size: $fs_medium;
+    font-weight: 600;
+  }
+
+  a {
+    color: $white;
+    text-transform: capitalize;
+  }
+
+  &__links {
+    position: absolute;
+    top: pxToRem(60);
+    left: -200%;
+    right: 0;
+    margin: auto;
+    padding: 2rem;
+    width: 100%;
+    transition: left 0.4s ease-in;
+    background-color: $color_primary;
+
+    @include flex(space-between, center, column);
+
+    @include breakpoint-up(medium) {
+      position: static;
+      background: transparent;
+      padding: 0;
+      width: auto;
+      margin: 0;
+      @include flex(flex-end, center, row);
+    }
+
+    a {
+      font-size: $fs_xsmall;
+      position: relative;
+      transition: 1s ease;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      text-align: center;
+      width: 100%;
+
+      &:hover {
+        background-color: $color_secondary;
+      }
+
+      @include breakpoint-up(medium) {
+        color: $white;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    &.active {
+      left: 0;
+    }
+  }
+}

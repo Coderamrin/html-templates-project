@@ -1,0 +1,28 @@
+.about {
+  background-color: $bg_why;
+
+  &__banner {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__grid {
+    @include container;
+    justify-content: center;
+
+    @include breakpoint-up(large) {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    @include flex($justifyContent: space-between, $alignItems: center);
+
+    padding-bottom: 1.5rem;
+  }
+
+  .item__info {
+    padding-left: pxToRem(20);
+  }
+}

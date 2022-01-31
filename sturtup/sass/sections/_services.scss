@@ -1,0 +1,11 @@
+.services {
+  &__bottom {
+    @include container();
+    justify-content: space-between;
+  }
+
+  .service__card {
+    @include column(3.7, large);
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,31 @@
+.footer {
+  @include container($isGrid: false);
+  background-color: $black;
+  color: $white;
+  padding: 5rem 20px;
+
+  a,
+  i {
+    color: $white;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  &__top {
+    @include container;
+    align-items: center;
+    justify-content: space-between;
+
+    &::nth-child(1),
+    &::nth-child(3) {
+      @include column(3, medium);
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid $color_tertiary;
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+}

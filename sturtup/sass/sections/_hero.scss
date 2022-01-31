@@ -1,0 +1,19 @@
+.hero {
+  background: linear-gradient(rgba(50, 48, 49, 0.9), rgba(50, 48, 49, 0.8)),
+    url('../../img/hero-bg.webp') center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: $white;
+
+  @include breakpoint-up(medium) {
+    height: 120vh;
+  }
+
+  @include container($isGrid: false);
+  @include centerBoth;
+
+  &__content {
+    @include column(12, medium);
+    @include column(10, large);
+  }
+}

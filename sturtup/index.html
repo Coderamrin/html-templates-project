@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sass Library</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="navbar__logo"
+          ><img src="./img/logo.webp" alt=""
+        /></a>
+
+        <div class="navbar__hamburger hide-for-desktop">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="navbar__links">
+          <a href="#home">home</a>
+          <a href="#services">services</a>
+          <a href="#portfolio">portfolio</a>
+          <a href="#blog">blog</a>
+          <a href="#contact">contact</a>
+        </div>
+
+        <a href="#" class="navbar__btn hide-for-mobile">say hello</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="title-1 pb-4">
+          Startup you can build a website online using the Bootstrap builder.
+        </h1>
+
+        <a href="#work" class="btn btn--primary">visit our works</a>
+      </div>
+    </section>
+
+    <section class="section services py-5" id="services">
+      <div class="section__top services__top">
+        <p class="subtitle pb-1">Services</p>
+        <h2 class="title-2 pb-4">
+          With more than 20 years of experience we can deliver the best product
+          design.
+        </h2>
+      </div>
+
+      <div class="services__bottom">
+        <div class="service__card card">
+          <i class="fas fa-shapes card__icon"></i>
+          <h3 class="card__title title-3 py-1">Web Design</h3>
+          <p class="card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            temporibus voluptate possimus culpa ea optio
+          </p>
+        </div>
+        <div class="service__card card">
+          <i class="fas fa-shapes card__icon"></i>
+          <h3 class="card__title title-3 py-1">Web Design</h3>
+          <p class="card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            temporibus voluptate possimus culpa ea optio
+          </p>
+        </div>
+        <div class="service__card card">
+          <i class="fas fa-shapes card__icon"></i>
+          <h3 class="card__title title-3 py-1">Web Design</h3>
+          <p class="card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            temporibus voluptate possimus culpa ea optio
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__banner hide-for-mobile"></div>
+      <div class="about__top py-4">
+        <p class="subtitle pb-1">About</p>
+        <h2 class="title-2 pb-2">Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In qui
+          quaerat laboriosam debitis ipsa dolorem sint consequatur, dicta
+          perferendis autem eum nihil temporibus tempore a distinctio
+          voluptatibus delectus repellat eius!
+        </p>
+
+        <p class="pt-2">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit iste
+          quis ad earum,
+        </p>
+
+        <button class="btn--primary mt-2">See work</button>
+      </div>
+    </section>
+
+    <section class="section portfolio py-5" id="portfolio">
+      <div class="section__top portfolio__top">
+        <h2 class="title-2 pb-2">Featured Works</h2>
+        <p class="pb-2">
+          Tour function information without cross action media value quickly
+          maximize timely deliverables.
+        </p>
+      </div>
+
+      <div class="portfolio__grid">
+        <div class="portfolio__item">
+          <div class="overlay py-2">
+            <p class="subtitle">app design</p>
+            <h3 class="title-3 py-1">colorlib app design</h3>
+            <a href="#" class="btn btn--primary">view</a>
+          </div>
+        </div>
+        <div class="portfolio__item">
+          <div class="overlay py-2">
+            <p class="subtitle">app design</p>
+            <h3 class="title-3 py-1">colorlib app design</h3>
+            <a href="#" class="btn btn--primary">view</a>
+          </div>
+        </div>
+        <div class="portfolio__item">
+          <div class="overlay py-2">
+            <p class="subtitle">app design</p>
+            <h3 class="title-3 py-1">colorlib app design</h3>
+            <a href="#" class="btn btn--primary">view</a>
+          </div>
+        </div>
+        <div class="portfolio__item">
+          <div class="overlay py-2">
+            <p class="subtitle">app design</p>
+            <h3 class="title-3 py-1">colorlib app design</h3>
+            <a href="#" class="btn btn--primary">view</a>
+          </div>
+        </div>
+        <div class="portfolio__item">
+          <div class="overlay py-2">
+            <p class="subtitle">app design</p>
+            <h3 class="title-3 py-1">colorlib app design</h3>
+            <a href="#" class="btn btn--primary">view</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-we-work py-5">
+      <div class="how-we-work__info py-4">
+        <h2 class="title-2 pb-2">How we work</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In qui
+          quaerat laboriosam debitis ipsa dolorem sint consequatur, dicta
+          perferendis autem eum nihil temporibus tempore a distinctio
+          voluptatibus delectus repellat eius!
+        </p>
+
+        <p class="pt-2">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit iste
+          quis ad earum,
+        </p>
+
+        <button class="btn--primary mt-2">See work</button>
+      </div>
+      <div class="how-we-work__banner hide-for-mobile"></div>
+    </section>
+
+    <section class="team py-5" id="team">
+      <div class="section__top team__top">
+        <h2 class="title-2 pb-2">Featured Works</h2>
+        <p class="pb-2">
+          Tour function information without cross action media value quickly
+          maximize timely deliverables.
+        </p>
+      </div>
+
+      <div class="team__grid">
+        <div class="team__item">
+          <div class="team__item-top">
+            <img src="./img/team-1.webp" alt="" />
+            <div class="team__item-social social__links">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+
+          <div class="team__item-bottom py-1">
+            <h3 class="name title-3 pb-1">Tamara Hudson</h3>
+            <p class="subtitle">Corporate Web Producer</p>
+          </div>
+        </div>
+        <div class="team__item">
+          <div class="team__item-top">
+            <img src="./img/team-1.webp" alt="" />
+            <div class="team__item-social social__links">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+
+          <div class="team__item-bottom py-1">
+            <h3 class="name title-3 pb-1">Tamara Hudson</h3>
+            <p class="subtitle">Corporate Web Producer</p>
+          </div>
+        </div>
+        <div class="team__item">
+          <div class="team__item-top">
+            <img src="./img/team-1.webp" alt="" />
+            <div class="team__item-social social__links">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+
+          <div class="team__item-bottom py-1">
+            <h3 class="name title-3 pb-1">Tamara Hudson</h3>
+            <p class="subtitle">Corporate Web Producer</p>
+          </div>
+        </div>
+        <div class="team__item">
+          <div class="team__item-top">
+            <img src="./img/team-1.webp" alt="" />
+            <div class="team__item-social social__links">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+
+          <div class="team__item-bottom py-1">
+            <h3 class="name title-3 pb-1">Tamara Hudson</h3>
+            <p class="subtitle">Corporate Web Producer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial py-5" id="testimonial">
+      <div class="testimonial__item">
+        <h3 class="title-3">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam itaque
+          facere at cupiditate saepe deserunt exercitationem, necessitatibus
+          fugiat voluptates temporibus sequi earum rerum minima modi numquam
+          porro pariatur, libero beatae!
+        </h3>
+        <div>
+          <img src="./img/team-1.webp" alt="team" />
+          <h3 class="title-3">jhon doe</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact py-5" id="contact">
+      <div class="section__top contact__top pb-2">
+        <h2 class="title-2 pb-2">Get in Touch</h2>
+        <p class="pb-2">
+          Tour function information without cross action media value quickly
+          maximize timely deliverables.
+        </p>
+      </div>
+
+      <form action="#" class="contact__form">
+        <input type="text" placeholder="Your Name" />
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Subject" />
+        <textarea name="messeage" id="" cols="30" rows="10"></textarea>
+        <button class="btn--primary">Send</button>
+      </form>
+    </section>
+
+    <!-- <section class="hero">
+
+      <div class="team__item">
+        <div class="team__card-top">
+          <img src="./img/team-1.webp" alt="" />
+          <div class="team__card-social social__links">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="team__card-bottom py-1">
+          <h3 class="name title-3 pb-1">Tamara Hudson</h3>
+          <p class="subtitle">Corporate Web Producer</p>
+        </div>
+      </div>
+    </section> -->
+
+    <footer id="footer" class="footer">
+      <div class="footer__top pt-4">
+        <img src="./img/logo.webp" alt="logo" />
+        <div class="footer__links py-2">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Policy</a>
+          <a href="#">About</a>
+          <a href="#">Policy</a>
+          <a href="#">About</a>
+          <a href="#">Policy</a>
+        </div>
+
+        <div class="social__links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="footer__bottom pb-4">
+        Copyright ©2022 All rights reserved | This template is made with by
+        Colorlib
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

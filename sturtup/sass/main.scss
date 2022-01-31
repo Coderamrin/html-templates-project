@@ -1,0 +1,23 @@
+@import 'reset';
+@import 'functions';
+@import 'variables';
+@import 'grid';
+@import 'mixin';
+@import 'typography';
+@import 'spacing';
+
+//components
+@import 'components/buttons';
+@import 'components/navbar';
+@import 'components/components';
+@import 'global';
+
+//sections
+@import 'sections/hero';
+@import 'sections/services';
+@import 'sections/about';
+@import 'sections/portfolio';
+@import 'sections/team';
+@import 'sections/testimonial';
+@import 'sections/contact';
+@import 'sections/footer';
